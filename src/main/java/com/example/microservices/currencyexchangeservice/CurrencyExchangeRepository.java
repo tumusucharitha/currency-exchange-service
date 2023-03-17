@@ -7,4 +7,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface CurrencyExchangeRepository extends JpaRepository<CurrencyExchange, Integer> {
 
+    CurrencyExchange findByFromAndTo(String from, String to);
 }
